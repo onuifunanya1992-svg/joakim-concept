@@ -1,0 +1,381 @@
+/* ==========================
+GLOBAL STYLES
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+background:#111827;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /*background: #ff6600;*/
+  /*background-color: rgba(11, 28, 45, 0.95);*/  
+  /*background-color: #000;*/
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+.logo a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.logo span,
+.footer span {
+  color:#c6a75e;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #c6a75e;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0%;
+  height: 2px;
+  background-color: #c6a75e;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* hamburger icon */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display:none;
+}
+
+
+/* Dropdown */
+
+.dropdown{
+
+display:none;
+
+position:absolute;
+
+background:white;
+
+min-width:250px;
+
+top:100%;
+left:0;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.dropdown li{
+display:block;
+}
+
+.dropdown li a{
+color:black;
+}
+
+.menu li:hover .dropdown{
+display:block;
+}
+
+/* Search */
+
+.search-box input{
+
+padding:10px;
+border:none;
+border-radius:5px;
+}
+
+
+
+
+
+/* ==========================
+MEDIA PAGE HERO
+========================== */
+
+.media-hero{
+
+background-image:
+url("images/media-banner.jpg");
+
+}
+
+.page-hero{
+
+height:90vh;
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-text{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+color:white;
+
+z-index:10;
+}
+
+.hero-text h1{
+
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:22px;
+margin-bottom:20px;
+}
+
+.service-section{
+
+padding:80px 8%;
+
+display:flex;
+
+align-items:center;
+
+gap:50px;
+
+background:white;
+}
+
+.reverse{
+
+flex-direction:row-reverse;
+}
+
+.content{
+
+flex:1;
+}
+
+.content h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+}
+
+.content p{
+
+font-size:18px;
+
+line-height:1.8;
+}
+
+.image{
+
+flex:1;
+}
+
+.image img{
+
+width:100%;
+
+border-radius:15px;
+}
+
+
+
+
+/* ==========================
+STATISTICS SECTION
+========================== */
+
+.stats-section{
+
+padding:100px 5%;
+
+background:#f3f3f3;
+
+text-align:center;
+}
+
+.stats-section h2{
+
+font-size:45px;
+
+margin-bottom:50px;
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+}
+
+.stat-box{
+
+background:white;
+
+padding:40px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stat-box h3{
+
+font-size:50px;
+
+color:#ff6600;
+
+margin-bottom:10px;
+}
+
+/* ==========================
+MEDIA CTA
+========================== */
+
+.media-cta{
+
+padding:120px 5%;
+
+text-align:center;
+
+background:#000;
+
+color:white;
+}
+
+.media-cta h2{
+
+font-size:50px;
+
+margin-bottom:20px;
+}
+
+.media-cta p{
+
+font-size:22px;
+
+margin-bottom:30px;
+}
+
+.cta-btn{
+
+background:#ff6600;
+
+padding:15px 35px;
+
+color:white;  
+
+text-decoration:none;
+
+border-radius:5px;
+}
+
+/* ==========================
+STICKY FOOTER
+========================== */
+
+.site-footer{
+
+/*position:sticky;*/
+bottom:0;
+
+background:#111827;
+color:white;
+
+text-align:center;
+
+padding:20px;
+}
+
+/* ==================================
+OFFICE SECTION
+================================== */
+
+.office-section,
+.global-section,
+.contact-form-section,
+.map-section,
+.hours-section,
+.social-section,
+.newsletter{
+
+padding:100px 5%;
+text-align:center;
+}
