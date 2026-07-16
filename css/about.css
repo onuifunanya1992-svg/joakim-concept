@@ -184,7 +184,7 @@ ABOUT HERO
 
 .about-hero{
 background-image:
-url("images/about-banner.jpg");
+url("../img/billboard7.JPG");
 }
 
 .page-hero{
@@ -471,6 +471,21 @@ OFFICE SECTION
 
 padding:100px 5%;
 text-align:center;
+} 
+
+/* CTA */
+
+.cta-btn{
+
+background:#ff6600;
+
+padding:15px 35px;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:5px;
 }
 
 .site-footer{
