@@ -391,3 +391,31 @@ OFFICE SECTION
 padding:100px 5%;
 text-align:center;
 }
+
+/* CTA */
+
+.cta-btn{
+
+background:#ff6600;
+
+padding:15px 35px;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:5px;
+}
+
+.site-footer{
+
+/*position:sticky;*/
+bottom:0;
+
+background:#111827;
+color:white;
+
+text-align:center;
+
+padding:20px;
+}   

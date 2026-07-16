@@ -3,7 +3,7 @@ GLOBAL STYLES
 ========================== */
 
 *{
-margin:0;
+margin:0;   
 padding:0;
 box-sizing:border-box;
 font-family:Arial, sans-serif;
@@ -455,4 +455,19 @@ color:white;
 text-align:center;
 
 padding:20px;
+}
+
+/* CTA */
+
+.cta-btn{
+
+background:#ff6600;
+
+padding:15px 35px;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:5px;
 }
